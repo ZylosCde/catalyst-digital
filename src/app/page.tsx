@@ -1,7 +1,19 @@
-export default function Home() {
+import { CTABannerSection } from "@/sections/_shared/CTABannerSection";
+import { ClientsSection } from "@/sections/home/ClientsSection";
+import { HeroSection } from "@/sections/home/HeroSection";
+import { ServicesOverviewSection } from "@/sections/home/ServicesOverviewSection";
+import { StatsSection } from "@/sections/home/StatsSection";
+import { TeamPreviewSection } from "@/sections/home/TeamPreviewSection";
+
+export default function HomePage() {
   return (
-    <main className="flex-1 flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Hello, World!</h1>
-    </main>
+    <>
+      <HeroSection />
+      <StatsSection />
+      <ServicesOverviewSection />
+      <TeamPreviewSection />
+      <ClientsSection />
+      <CTABannerSection />
+    </>
   );
 }
